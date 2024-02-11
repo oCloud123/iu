@@ -390,7 +390,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 	spawn(function()
 		NotificationConfig.Name = NotificationConfig.Name or "Notification"
 		NotificationConfig.Content = NotificationConfig.Content or "Test"
-		NotificationConfig.Image = NotificationConfig.Image or "rbxassetid://15541504459"
+		NotificationConfig.Image = NotificationConfig.Image or "rbxassetid://16330404759"
 		NotificationConfig.Time = NotificationConfig.Time or 15
 
 		local NotificationParent = SetProps(MakeElement("TFrame"), {
@@ -474,8 +474,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	WindowConfig.IntroText = WindowConfig.IntroText or "Jack Hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
-	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://15935059060"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://15935059060"
+	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://16330404759"
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://16330404759"
 	OrionLib.Folder = WindowConfig.ConfigFolder
 	OrionLib.SaveCfg = WindowConfig.SaveConfig
 
@@ -501,7 +501,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Position = UDim2.new(0.5, 0, 0, 0),
 		BackgroundTransparency = 1
 	}), {
-		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://15935059060"), {
+		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://16330404759"), {
 			Position = UDim2.new(0, 9, 0, 6),
 			Size = UDim2.new(0, 18, 0, 18)
 		}), "Text")
