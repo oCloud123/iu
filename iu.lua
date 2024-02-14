@@ -12,7 +12,7 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(25, 25, 45),
+			Main = Color3.fromRGB(0, 30, 60),
 			Second = Color3.fromRGB(32, 32, 62),
 			Stroke = Color3.fromRGB(60, 90, 50),
 			Divider = Color3.fromRGB(80, 75, 75),
@@ -390,7 +390,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 	spawn(function()
 		NotificationConfig.Name = NotificationConfig.Name or "Notification"
 		NotificationConfig.Content = NotificationConfig.Content or "Test"
-		NotificationConfig.Image = NotificationConfig.Image or "rbxassetid://16330404759"
+		NotificationConfig.Image = NotificationConfig.Image or "rbxassetid://16369967987"
 		NotificationConfig.Time = NotificationConfig.Time or 15
 
 		local NotificationParent = SetProps(MakeElement("TFrame"), {
@@ -464,18 +464,18 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "Jack Hub"
+	WindowConfig.Name = WindowConfig.Name or "Orange Hub"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "Jack Hub"
+	WindowConfig.IntroText = WindowConfig.IntroText or "Orange Hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
-	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://16330404759"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://16330404759"
+	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://8834748103"
 	OrionLib.Folder = WindowConfig.ConfigFolder
 	OrionLib.SaveCfg = WindowConfig.SaveConfig
 
@@ -501,7 +501,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Position = UDim2.new(0.5, 0, 0, 0),
 		BackgroundTransparency = 1
 	}), {
-		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://16330404759"), {
+		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://8834748103"), {
 			Position = UDim2.new(0, 9, 0, 6),
 			Size = UDim2.new(0, 18, 0, 18)
 		}), "Text")
